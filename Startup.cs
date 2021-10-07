@@ -74,8 +74,10 @@ namespace ProjetoTarefa
                 .AddEntityFrameworkStores<ProjectTaskContext>();
             #endregion
 
-            #region Dependency Injection
+            #region Dependency Injection            
             services.AddScoped<AuthService>();
+            services.AddScoped<ClientService>();
+            services.AddScoped<TaskListService>();
             #endregion
 
             #region Configure Bearer Authentication
